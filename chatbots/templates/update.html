@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>T&mdash;camping</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		
+		<link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='styleFontsUpdate.css')}}"/>
+
+		
+		<link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='material-design-iconic-font.min.css') }}"/>
+
+		
+		<link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='datepicker.min.css') }}"/>
+		
+		
+		<link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='styleUpdate.css') }}"/>
+	</head>
+  
+	<body>
+
+		<div class="wrapper">
+			<div class="inner">
+				<form  method="POST" enctype="multipart/form-data">
+					
+					<h3>Update Blog</h3>
+					{% with messages = get_flashed_messages(with_categories=True) %}
+					{% if messages %}
+					  {% for category, message in messages %}
+					  {% if category == "error" %}
+					  <div class="alert alert-danger alter-dismissible fade show" role="alert">
+						{{ message }}
+						<button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+					  </div>
+					  {% else %}
+					  <div class="alert alert-success alter-dismissible fade show" role="alert">
+						{{ message }}
+						<button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+					  </div>
+					  {% endif %}
+					
+					  {% endfor %}
+					{% endif %}
+					{% endwith %}
+					<div class="form-row">
+						<div class="form-wrapper">
+							<label for="">Title*</label>
+							
+							
+							<input type="text" class="form-control" id="title" name="text" placeholder="Your Title">
+						</div>
+						
+					</div>
+					<div class="form-row">
+					<div class="form-wrapper">
+						<label for="">content *</label>
+						<textarea type="text" class="form-control"  name="content" placeholder="content"></textarea>
+					</div>
+				</div>
+				<div class="form-row">
+					<div class="form-wrapper">
+						<label for="select">The state *</label>
+						<select  name="lieu" class="form-control"  id="select">
+							<option name="lieu">Tunis</option>
+							<option name="lieu">Sousse</option>
+							<option name="lieu">Djerba</option>
+							<option name="lieu">Mahdia</option>
+							<option name="lieu">Jendouba</option>
+							<option >Kef</option>
+						</select>
+
+					</div>
+				</div>
+					<div class="form-row">
+						<div class="form-wrapper">
+							<label for="">PICTURE *</label>
+							<input value="Picture" type=file name=pic>
+							
+						</div>
+						<div class="form-wrapper">
+							<label for="">video *</label>
+							
+							<input type="file" name="picVideo">
+						</div>
+					</div>
+					
+					<button data-text="UPDATE">
+						<span>Update</span>
+					</button>
+				</form>
+			</div>
+		</div>
+		
+		<script src="js/jquery-3.3.1.min.js"></script>
+
+		<!-- DATE-PICKER -->
+		<script src="vendor/date-picker/js/datepicker.js"></script>
+		<script src="vendor/date-picker/js/datepicker.en.js"></script>
+
+		<script src="js/main.js"></script>
+	</body><!-- This templates was made by Colorlib (https://colorlib.com) -->
+</html>

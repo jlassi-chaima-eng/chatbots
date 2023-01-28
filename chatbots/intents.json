@@ -1,0 +1,85 @@
+
+{
+    "intents": [
+      {
+        "tag": "greeting",
+        "patterns": [
+          "Hi",
+          "Hey",
+          "How are you",
+          "Is anyone there?",
+          "Hello",
+          "Good day"
+        ],
+        "responses": [
+          "Hey :-)",
+          "Hello, thanks for visiting",
+          "Hi there, what can I do for you?",
+          "Hi there, how can I help?"
+        ]
+      },
+      {
+        "tag": "goodbye",
+        "patterns": ["Bye", "See you later", "Goodbye"],
+        "responses": [
+          "See you later, thanks for visiting",
+          "Have a nice day",
+          "Bye! Come back again soon."
+        ]
+      },
+      {
+        "tag": "thanks",
+        "patterns": ["Thanks", "Thank you", "That's helpful", "Thank's a lot!"],
+        "responses": ["Happy to help!", "Any time!", "My pleasure"]
+      },
+      {
+        "tag": "question",
+        "patterns": [
+          "How can I consult Blog?",
+          "How can I Post Blog?"
+        ],
+        "responses": [
+          "first you have to fill in the registration form",
+          "you have to fill in the registration form"
+        ]
+      },
+      {
+        "tag": "camping",
+        "patterns": [
+          "find camping",
+          "search camping?",
+          "Can I ask you about camping ?"
+          
+        ],
+        "responses": [
+         
+          "Yes, you can take a look in dashbord"
+        ]
+      },
+      {
+        "tag": "Location",
+        "patterns": [
+          "where is a good location?",
+          "How do I find a summer camp?"
+         
+        ],
+        "responses": [
+          "you can write it in chat maps blog title "
+          
+        ]
+      },
+      {
+        "tag": "funny",
+        "patterns": [
+          "Tell me a joke!",
+          "Tell me something funny!",
+          "Do you know a joke?"
+        ],
+        "responses": [
+          "Why did the hipster burn his mouth? He drank the coffee before it was cool.",
+          "What did the buffalo say when his son left for college? Bison."
+        ]
+      }
+    ]
+  }
+  

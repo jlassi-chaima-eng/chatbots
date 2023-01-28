@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>OneSchool &mdash; Website by Colorlib</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- <button><img src="static/images/chatbox-icon.svg" /></button> -->
+    <link href="https://fonts.googleapis.com/css?family=Muli:300,400,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="static/fonts/icomoon/style.css">
+
+    <!-- <button><img src="static', images/chatbox-icon.svg" /></button> -->
+
+    <link rel="stylesheet" href="static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="static/css/jquery-ui.css">
+    <link rel="stylesheet" href="static/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="static/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="static/css/owl.theme.default.min.css">
+
+    <link rel="stylesheet" href="static/css/jquery.fancybox.min.css">
+
+    <link rel="stylesheet" href="'static/css/bootstrap-datepicker.css">
+
+    <link rel="stylesheet" href="static/fonts/flaticon/font/flaticon.css">
+
+    <link rel="stylesheet" href="static/css/aos.css">
+
+    <link rel="stylesheet" href="static/style.css">
+    
+    
+  </head>
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+  
+  <div class="site-wrap">
+
+    <div class="site-mobile-menu site-navbar-target">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close mt-3">
+          <span class="icon-close2 js-menu-toggle"></span>
+        </div>
+      </div>
+      <div class="site-mobile-menu-body"></div>
+    </div>
+   
+    
+    <header class="site-navbar py-4 js-sticky-header site-navbar-target" role="banner">
+      
+      <div class="container-fluid">
+        <div class="d-flex align-items-center">
+          <div class="site-logo mr-auto w-25"><a href="index.html">Tcamping<span class="glyphicon glyphicon-star" style="color: red;"></span></a></div>
+
+          <div class="mx-auto text-center">
+            <nav class="site-navigation position-relative text-right" role="navigation">
+              <ul class="site-menu main-menu js-clone-nav mx-auto d-none d-lg-block  m-0 p-0">
+                <li><a href="/accueil" class="nav-link">Home</a></li>
+                <li><a href="/" class="nav-link">Login</a></li>
+                <!-- <li><a href="/culture" class="nav-link">Culture</a></li> -->
+                <!-- <li><a href="/contact" class="nav-link">Contact</a></li> -->
+              </ul>
+            </nav>
+          </div>
+
+          <div class="ml-auto w-25">
+            <nav class="site-navigation position-relative text-right" role="navigation">
+              <ul class="site-menu main-menu site-menu-dark js-clone-nav mr-auto d-none d-lg-block m-0 p-0">
+                <li class="cta"><a href="#contact-section" class="nav-link"><span>Contact Us</span></a></li>
+              </ul>
+            </nav>
+            <a href="#" class="d-inline-block d-lg-none site-menu-toggle js-menu-toggle text-black float-right"><span class="icon-menu h3"></span></a>
+          </div>
+        </div>
+      </div>
+      
+    </header>
+
+    <div class="intro-section" id="home-section">
+      
+      <div class="slide-1" style="background-image: url('static/images/tcamp.jpg');" data-stellar-background-ratio="0.5">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-12">
+              <div class="row align-items-center">
+                <div class="col-lg-6 mb-4">
+                  <h1 style="color:black;" data-aos="fade-up" data-aos-delay="100">live camping</h1>
+                  <!-- <p style="color:black; font-size:1.3em;" class="mb-4"  data-aos="fade-up" data-aos-delay="200">Vous etes stresse ,vous chercher de faire des nouveux activites??? Nous sommes la pour donner la main de changer votre vie.</p> -->
+                  <p data-aos="fade-up" data-aos-delay="300"><a href="#" class="btn btn-primary py-3 px-5 btn-pill">Admission Now</a></p>
+
+                </div>
+
+                <div class="col-lg-5 ml-auto" data-aos="fade-up" data-aos-delay="500">
+                  <form action="" method="post" class="form-box">
+                    {% with messages = get_flashed_messages(with_categories=True) %}
+{% if messages %}
+  {% for category, message in messages %}
+  {% if category == "error" %}
+  <div class="alert alert-danger alter-dismissible fade show" role="alert">
+    {{ message }}
+    <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+  </div>
+  {% else %}
+  <div class="alert alert-success alter-dismissible fade show" role="alert">
+    {{ message }}
+    <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+  </div>
+  {% endif %}
+
+  {% endfor %}
+{% endif %}
+{% endwith %}
+                    <h3 class="h4 text-black mb-4">Inscription</h3>
+                    <div class="form-group">
+                        <input type="text" name="pseudo" id="first_name" class="form-control input-sm" placeholder="Votre pseudo">
+                       </div>
+                    <div class="form-group">
+                      <input type="text" name="email" class="form-control" placeholder="Email@gmail.com ">
+                    </div>
+                    <div class="form-group">
+                      <input type="password" name="mdp1"class="form-control" placeholder="Votre mot de passe">
+                    </div>
+                    <div class="form-group">
+                        <input type="password" name="mdp2"class="form-control" placeholder="Votre mot de passe">
+                    </div>
+                    <div class="form-check form-check-inline" >
+                        <input class="form-check-input" type="radio" name="genre" id="inlineRadio1" value="Femme">
+                        <label class="form-check-label" for="inlineRadio1" >Femme</label>
+                        </div>
+                        <div class="form-check form-check-inline" >
+                        <input class="form-check-input" type="radio" name="genre" id="inlineRadio2" value="Homme">
+                        <label class="form-check-label" for="inlineRadio2" >Homme</label>
+                  </div>
+
+   
+                    <div class="form-group">
+                      <input type="submit" class="btn btn-primary btn-pill" value="Connect">
+                    </div>
+                  </form>
+
+                </div>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+  </div> <!-- .site-wrap -->
+
+  <script src="static/js/jquery-3.3.1.min.js"></script>
+  <script src="static/js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="static/js/jquery-ui.js"></script>
+  <script src="static/js/popper.min.js"></script>
+  <script src="static/js/bootstrap.min.js"></script>
+  <script src="static/js/owl.carousel.min.js"></script>
+  <script src="static/js/jquery.stellar.min.js"></script>
+  <script src="static/js/jquery.countdown.min.js"></script>
+  <script src="static/js/bootstrap-datepicker.min.js"></script>
+  <script src="static/js/jquery.easing.1.3.js"></script>
+  <script src="static/js/aos.js"></script>
+  <script src="static/js/jquery.fancybox.min.js"></script>
+  <script src="static/js/jquery.sticky.js"></script>
+
+  
+  <script src="static/js/main.js"></script>
+    
+  </body>
+</html>

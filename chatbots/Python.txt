@@ -1,0 +1,23 @@
+creer APP: mkdir Nom de projet
+1-cd chatbot-deployment 
+2-creer environement: python -m venv venv
+2-active  variable d'environement : venv/Scripts/activate.bat
+3-les bibliotheque utilise : -pip install flask 
+                             -pip install nltk
+                             -pip install torch (numpy)
+                             -pip install torchvision
+RQ : on peut met les BIBliotheque dans un fichier txt et l'appeler
+1_pip freeze
+2_pip install -r requests.txt 
+
+=>Affiche la liste :pip list 
+=>supprimer venv par : rmdir venv /s
+ 
+4-python
+import nltk
+nltk.download('punkt')
+quit()
+5-run App:
+python train.py
+python chat.py
+                            
