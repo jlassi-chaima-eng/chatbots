@@ -6,7 +6,7 @@ creer APP: mkdir Nom de projet
                              -pip install nltk
                              -pip install torch (numpy)
                              -pip install torchvision
-RQ : on peut met les BIBliotheque dans un fichier txt et l'appeler
+RQ : on peut met les BIBliotheque dans un fichier txt et l'appele
 1_pip freeze
 2_pip install -r requests.txt 
 
